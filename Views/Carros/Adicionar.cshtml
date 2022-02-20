@@ -1,0 +1,57 @@
+@{
+    var carros = ViewBag.Carro;
+}
+
+<link rel="stylesheet" href="~/css/editar.css">
+
+
+<form action="/Carros/Salvar" method="post">
+
+    <h2>Adicionar um novo carro na tabela</h2>
+
+    <div>
+        <input type="hidden" name="id" id="id">
+        <label for="nome">Nome do carro:</label>
+        <input type="text" name="nome" id="nome" required maxlength="30">
+    </div>
+
+    <div>
+        <label for="modelo" class="label-modelo">Modelo:</label>
+    </div>
+    
+    <div class="select">
+        
+        <select name="modelo" id="modelo" class="form-select">
+            <option value="CONVERSIVEL" selected>Conversível</option>
+            <option value="COUPE">Coupé</option>
+            <option value="HATCH">Hatch</option>
+            <option value="MINIVAN">Minivan</option>
+            <option value="SEDAN">Sedan</option>
+            <option value="SUV">Suv</option>
+            <option value="PERUA">Perua</option>
+            <option value="PICATE">Picape</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="valor">Valor:</label>
+        <input type="text" name="valor" id="valor">
+    </div>
+
+    <div>
+        <label for="ano">Ano:</label>
+        <input type="text" name="ano" id="ano" required maxlength="4">
+    </div>
+
+    <div>
+        <label for="cor">Cor:</label>
+        <input type="text" name="cor" id="cor" required maxlength="18">
+    </div>
+    </br>
+
+    <div>
+        <button type="submit" class="botao">Salvar</button>
+    </div>
+
+</form>
+

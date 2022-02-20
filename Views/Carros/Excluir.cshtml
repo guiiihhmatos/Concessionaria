@@ -1,0 +1,42 @@
+@{
+    var carro = @ViewBag.Carro;
+}
+
+<link rel="stylesheet" href="~/css/editar.css">
+
+<form action="/Carros/Excluir" method="post">
+
+    <h2>Excluir o @carro.Nome da tabela</h2>
+
+    <div>
+        <input type="hidden" name="id" id="id" value="@carro.Id">
+        <label for="nome">Nome do carro:</label>
+        <input type="text" name="nome" id="nome" value="@carro.Nome" readonly>
+    </div>
+
+    <div>
+        <label for="modelo">Modelo:</label>
+        <input type="text" name="modelo" id="modelo" value="@carro.Modelo" readonly>
+    </div>
+
+    <div>
+        <label for="valor">Valor:</label>
+        <input type="text" name="valor" id="valor" value="@carro.Valor" readonly>
+    </div>
+
+    <div>
+        <label for="ano">Ano:</label>
+        <input type="text" name="ano" id="ano" value="@carro.Ano" readonly>
+    </div>
+
+    <div>
+        <label for="cor">Cor:</label>
+        <input type="text" name="cor" id="cor" value="@carro.Cor" readonly>
+    </div>
+    </br>
+
+    <div>
+        <button type="submit" class="botao">Excluir</button>
+    </div>
+
+</form>

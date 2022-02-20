@@ -1,0 +1,83 @@
+body
+{
+    color: white;
+    background-color: black;
+}
+
+/*============================== Tabela ==============================*/
+
+.Tabelas
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15vh;
+    margin-top: 3vh;
+}
+
+th
+{
+    text-align: center;
+    padding: 12px;
+    background-color: #56cfe1;
+    color: black;
+    font-weight: 900;
+}
+
+td
+{
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    
+}
+
+tr
+{
+    background-color: #72efdd;
+    border-color: black;
+    color: black;
+}
+
+/*============================== Botão ==============================*/
+
+#botao
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.botao
+{
+    padding: 10px;
+    height: 10vh;
+    width: 18vh;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.botao:hover
+{
+    color: black;
+    background-color: #ccc;
+    transition: 0.6s;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+
+img
+{
+    height: 50px;
+    width: 50px;
+}

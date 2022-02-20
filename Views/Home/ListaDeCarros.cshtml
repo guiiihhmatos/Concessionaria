@@ -1,0 +1,47 @@
+@{
+    ViewData["Title"] = "Lista de Carros";
+}
+
+<link rel="stylesheet" href="~/css/ListaCarros.css">
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p>Lista de carros cadastrados na concessionária</p>
+</div>
+
+<div id="botao">
+    <p><a class="botao" href="/Carros/Adicionar">Adicionar &raquo;</a></p>
+</div>
+
+
+
+<div class="Tabelas">
+    <table>
+    <thead>
+        <th>Nome</th>
+        <th>Modelo</th>
+        <th>Valor</th>
+        <th>Ano</th>
+        <th>Cor</th>
+        <th>###</th>
+        <th>###</th>
+    </thead>
+
+    <tbody>
+
+            @foreach (var item in ViewBag.lista)
+            { 
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@item.Modelo</td>
+                    <td>R$ @item.Valor</td>
+                    <td>@item.Ano</td>
+                    <td>@item.Cor</td>
+                    <td><a href="/Carros/Editar/@item.Id"><img src="~/image/editar-img.png" alt="editar"></a></td>
+                    <td><a href="/Carros/Excluir/@item.Id"><img src="~/image/excluir-img.png" alt="excluir"></a></td>
+                </tr>
+            }
+        
+    </tbody>
+</table>    
+</div>
+

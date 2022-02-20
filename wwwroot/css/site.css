@@ -1,0 +1,129 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+
+/* Provide sufficient contrast against white background */
+
+header
+{
+  height: 15vh;
+}
+
+nav
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+}
+
+.title
+{
+  color: white;
+  font-size: 30px;
+}
+
+.div-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-container a
+{
+  color: white;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+nav a:hover
+{
+  text-decoration: none;
+  color: #72efdd;
+  transition: 0.4s;
+}
+
+nav li
+{
+  list-style: none;
+}
+
+.botoes
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-site
+{
+  height: 7vh;
+  width: 9vw;
+  background-color: black;
+  border: 3px solid #72efdd;
+  color: white;
+  margin-right: 20px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.login-site:hover
+{
+  background-color: #72efdd;
+  transition: 0.6s;
+  color: black;
+}
+
+.cadastrar:hover
+{
+  background-color: black;
+  color: white;
+  transition: 0.6s;
+}
+
+.cadastrar
+{
+  height: 7vh;
+  width: 9vw;
+  background-color: #72efdd;
+  border: none;
+  color: black;
+  font-weight: 700;
+  border: 3px solid #72efdd;
+  border-radius: 6px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: black;
+}
