@@ -24,6 +24,7 @@ namespace game
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,27 +51,34 @@ namespace game
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Login}/{action=Index}/{id?}");
             });
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
+                    name: "Adicionar",
+                    pattern: "{controller=Login}/{action=Cadastrar}/{id?}");
+            });
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "Adicionar",
                     pattern: "{controller=Carros}/{action=Adicionar}/{id?}");
             });
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
+                    name: "Editar",
                     pattern: "{controller=Carros}/{action=Editar}/{id?}");
             });
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
+                    name: "Excluir",
                     pattern: "{controller=Carros}/{action=Excluir}/{id?}");
             });
         }

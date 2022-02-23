@@ -1,0 +1,160 @@
+body
+{
+    background-image: url(../image/background-Home.jpg);
+    background-size: cover;
+    height: 140vh;
+}
+
+/*========================== Container inteira do login ==========================*/
+
+.container-do-login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(48, 45, 45, 0.9);
+    height: 80vh;
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.container-do-login h1
+{
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 8vh;
+    color: white;
+}
+
+.container-do-login h1::after
+{
+    content: "";
+    display: block;
+    background-color: #56cfe1;
+    width: 3vw;
+    height: 0.8vh;
+}
+
+/*========================== Container inteira do Cadastro ==========================*/
+
+.container-do-Cadastro
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(48, 45, 45, 0.9);
+    height: 90vh;
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.container-do-Cadastro h1
+{
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 8vh;
+    color: white;
+}
+
+.container-do-Cadastro h1::after
+{
+    content: "";
+    display: block;
+    background-color: #56cfe1;
+    width: 3vw;
+    height: 0.8vh;
+}
+
+/*========================== Formulario ==========================*/
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label
+{
+    color: white;
+}
+
+.pegar-info
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pegar-info input[type="email"]
+{
+    margin-bottom: 5vh;
+}
+
+.pegar-info input[type="text"]
+{
+    margin-bottom: 5vh;
+}
+
+
+form input[type="email"], input[type="password"], input[type="text"]
+{
+    height: 8vh;
+    outline: 0;
+    background-color: #ccc;
+    font-size: 18px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 26vw;
+}
+
+/*========================== Botão do Formulario ==========================*/
+
+.botao button
+{
+    height: 8vh;
+    width: 10vw;
+    background-color: black;
+    color: white;
+    border: 3px solid #56cfe1;
+    border-radius: 10px;
+    font-weight: 700;
+    margin: 2vh;
+}
+
+
+.botao button:hover
+{
+    background-color: #56cfe1;
+    color: black;
+    transform-origin: 1s;
+}
+
+/*========================== Links do Formulario ==========================*/
+
+.links
+{
+    margin: 1vh;
+}
+
+.links a
+{
+    color: #56cfe1;
+}
+
+.links a:hover
+{
+    color: blue;
+    transition: 0.3s;
+}
+
+/*========================== ViewBag do Formulario ==========================*/
+
+.container-do-login p
+{
+    color: red;
+}
+

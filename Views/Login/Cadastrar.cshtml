@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="~/css/login.css">
+
+<div class="container-do-Cadastro">
+
+    <h1>Cadastrar</h1>
+
+    <form action="/Login/Cadastro" method="post">
+
+        <div class="pegar-info">
+
+            <label for="nome">Nome de Usuário:</label>
+            <input type="text" name="nome" id="nome" placeholder="Pedrinho...">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Seu email...">
+        
+            <label for="senha">Sua senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Sua senha...">
+        </div>
+
+        <div class="botao">
+            <button type="submit">Cadastrar</button>
+        </div>
+
+        <div class="links">
+            <a href="/Login/Index">Já tenho login</a>
+        </div>
+
+    </form>
+
+    <p>@ViewBag.aviso</p>
+
+</div>

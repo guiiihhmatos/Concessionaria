@@ -8,7 +8,7 @@ namespace game.Models
 {
     public class Carros
     {
-        public static string stringDeConexao = @"Server=DESKTOP-DUMK4UJ\SQLEXPRESS;Initial Catalog = Concessionaria; Integrated Security = true; Connect Timeout = 30; Encrypt=false; TrustServerCertificate=false; ApplicationIntent=ReadWrite; MultiSubnetFailover=false;";
+        private readonly static string stringDeConexao = @"Server=DESKTOP-DUMK4UJ\SQLEXPRESS;Initial Catalog = Concessionaria; Integrated Security = true; Connect Timeout = 30; Encrypt=false; TrustServerCertificate=false; ApplicationIntent=ReadWrite; MultiSubnetFailover=false;";
  
         public int Id { get; set; }
 

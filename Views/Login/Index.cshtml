@@ -1,0 +1,35 @@
+
+<link rel="stylesheet" href="~/css/login.css">
+
+<div class="container-do-login">
+
+    <h1>Login</h1>
+
+    <form action="/Login/Verificar" method="post">
+
+        <div class="pegar-info">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Seu email...">
+        
+            <label for="senha">Sua senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Sua senha...">
+        </div>
+
+        <div class="links">
+            <a href="#">Esqueci minha senha</a>
+        </div>
+
+        <div class="botao">
+            <button type="submit">Entrar</button>
+        </div>
+
+        <div class="links">
+            <a href="/Login/Cadastrar">Me Registrar</a>
+        </div>
+
+    </form>
+
+    <p>@ViewBag.aviso</p>
+
+</div>
+

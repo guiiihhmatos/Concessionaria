@@ -15654,13 +15654,23 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\guisa\\OneDrive\\Documentos\\game\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\guisa\\OneDrive\\Documentos\\game\\Views\\Carros\\Excluir.cshtml",
+      "TargetPath": "Views\\Carros\\Excluir.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\guisa\\OneDrive\\Documentos\\game\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\guisa\\OneDrive\\Documentos\\game\\Views\\Login\\Cadastrar.cshtml",
+      "TargetPath": "Views\\Login\\Cadastrar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\guisa\\OneDrive\\Documentos\\game\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\guisa\\OneDrive\\Documentos\\game\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {

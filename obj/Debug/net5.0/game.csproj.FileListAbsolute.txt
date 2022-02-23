@@ -63,3 +63,5 @@ C:\Users\guisa\OneDrive\Documentos\game\obj\Debug\net5.0\Razor\Views\Home\ListaD
 C:\Users\guisa\OneDrive\Documentos\game\obj\Debug\net5.0\Razor\Views\Carros\Adicionar.cshtml.g.cs
 C:\Users\guisa\OneDrive\Documentos\game\obj\Debug\net5.0\Razor\Views\Carros\Editar.cshtml.g.cs
 C:\Users\guisa\OneDrive\Documentos\game\obj\Debug\net5.0\Razor\Views\Carros\Excluir.cshtml.g.cs
+C:\Users\guisa\OneDrive\Documentos\game\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+C:\Users\guisa\OneDrive\Documentos\game\obj\Debug\net5.0\Razor\Views\Login\Cadastrar.cshtml.g.cs
