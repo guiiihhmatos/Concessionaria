@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using game.Models;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
+using game.database;
 
 namespace game.Controllers
 {
@@ -23,7 +26,7 @@ namespace game.Controllers
         [HttpPost]
         public void Cadastro(Usuarios user)
         {
-            var usuario = new Usuarios();
+            var usuario = new DatabaseUsuario();
             usuario.Salvar(user);
 
             usuario.Cadastrar(user);
@@ -34,7 +37,7 @@ namespace game.Controllers
         [HttpPost]
         public void Verificar(Usuarios user)
         {
-            var usuario = new Usuarios();
+            var usuario = new DatabaseUsuario();
             ViewBag.aviso = "";
 
             usuario.Salvar(user);

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using game.Models;
+using game.database;
 
 namespace game.Controllers
 {
@@ -14,7 +15,7 @@ namespace game.Controllers
         {
             ViewBag.Titulo = "Adicionar novo carro";
 
-            var carro = new Carros();
+            var carro = new DatabaseCarros();
             carro.PegarInformacoes(id);
             ViewBag.Carro = carro;
 
@@ -23,7 +24,7 @@ namespace game.Controllers
 
         public IActionResult Editar(int id)
         {
-            var carro = new Carros();
+            var carro = new DatabaseCarros();
             carro.PegarInformacoes(id);
             ViewBag.Carro = carro;
 
@@ -32,7 +33,7 @@ namespace game.Controllers
 
         public IActionResult Excluir(int id)
         {
-            var carro = new Carros();
+            var carro = new DatabaseCarros();
             carro.PegarInformacoes(id);
             ViewBag.Carro = carro;
 
@@ -42,7 +43,7 @@ namespace game.Controllers
         [HttpPost]
         public void Excluir(Carros user ,int id)
         {
-            var carro = new Carros();
+            var carro = new DatabaseCarros();
             
             carro.Salvar(user, id);
             carro.Excluir();
@@ -53,7 +54,7 @@ namespace game.Controllers
         [HttpPost]
         public void Salvar(Carros user, int id)
         {
-            var carro = new Carros();
+            var carro = new DatabaseCarros();
             
             carro.Salvar(user, id);
             

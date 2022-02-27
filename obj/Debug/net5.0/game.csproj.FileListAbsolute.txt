@@ -65,3 +65,4 @@ C:\Users\guisa\OneDrive\Documentos\game\obj\Debug\net5.0\Razor\Views\Carros\Edit
 C:\Users\guisa\OneDrive\Documentos\game\obj\Debug\net5.0\Razor\Views\Carros\Excluir.cshtml.g.cs
 C:\Users\guisa\OneDrive\Documentos\game\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
 C:\Users\guisa\OneDrive\Documentos\game\obj\Debug\net5.0\Razor\Views\Login\Cadastrar.cshtml.g.cs
+C:\Users\guisa\OneDrive\Documentos\game\bin\Debug\net5.0\Newtonsoft.Json.dll

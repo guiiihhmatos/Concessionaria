@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using game.Models;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
+using game.database;
 
 namespace game.Controllers
 {
@@ -25,7 +28,7 @@ namespace game.Controllers
 
         public IActionResult ListaDeCarros()
         {
-            var lista = Carros.PegarCarros();
+            var lista = DatabaseCarros.PegarCarros();
             ViewBag.lista = lista;
 
             return View();
